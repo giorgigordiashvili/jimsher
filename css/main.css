@@ -218,6 +218,18 @@ body {
   height: 100vh;
 }
 
+.fixed-position header .line {
+  background-color: transparent !important;
+}
+
+.fixed-position header .line h1 {
+  color: #fff !important;
+}
+
+.fixed-position header .line button {
+  color: #fff;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -255,6 +267,18 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+header.black .line {
+  background-color: #fff;
+}
+
+header.black .line h1 {
+  color: #000;
+}
+
+header.black button {
+  color: #000;
 }
 
 header .line {
@@ -597,5 +621,61 @@ header .nav-bottom a {
   .section-4 .center-box .main-header {
     font-size: 3em;
   }
+}
+
+.brands {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  padding: 6em 2em;
+}
+
+@media only screen and (max-width: 768px) {
+  .brands {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.brands .brand-container {
+  position: relative;
+}
+
+.brands .brand-container .hover-effect {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.brands .brand-container:hover img {
+  opacity: 0.3;
+}
+
+.brands .brand-container:hover .hover-effect {
+  opacity: 1;
+}
+
+.brands .text {
+  background-color: #141414;
+  color: #fff;
+  padding: 1em 2em;
+  cursor: pointer;
+}
+
+.brands a img {
+  width: 100%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 /*# sourceMappingURL=main.css.map */

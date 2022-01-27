@@ -4,6 +4,7 @@ $(function () {
       $("#navbar").slideDown("slow");
       $("#navbar").css("display", "flex");
       $("#nav").text("CLOSE");
+
       $("body").addClass("fixed-position");
     } else {
       $("#navbar").slideUp();
