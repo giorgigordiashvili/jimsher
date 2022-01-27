@@ -44,6 +44,17 @@ body {
   position: fixed;
   width: 100vw;
   height: 100vh;
+  header {
+    .line {
+      background-color: transparent !important;
+      h1 {
+        color: #fff !important;
+      }
+      button {
+        color: #fff;
+      }
+    }
+  }
 }
 .flex {
   display: flex;
@@ -74,6 +85,17 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  &.black {
+    .line {
+      background-color: #fff;
+      h1 {
+        color: #000;
+      }
+    }
+    button {
+      color: #000;
+    }
+  }
   .line {
     position: absolute;
     width: 100%;
@@ -184,3 +206,4 @@ header {
 @import "./loading";
 @import "./homepage";
 @import "./firstpage";
+@import "./brands";
