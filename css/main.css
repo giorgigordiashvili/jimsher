@@ -1,0 +1,633 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Object Sans Heavy Slanted";
+  src: url("../assets/fonts/PPObjectSans-HeavySlanted.otf");
+}
+
+@font-face {
+  font-family: "Object Sans Slanted";
+  src: url("../assets/fonts/PPObjectSans-Slanted.otf");
+}
+
+@font-face {
+  font-family: "Object Sans";
+  src: url("../assets/fonts/PPObjectSans-Regular.otf");
+}
+
+@font-face {
+  font-family: "Object Sans Heavy";
+  src: url("../assets/fonts/PPObjectSans-Heavy.otf");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
+@media only screen and (max-width: 768px) {
+  .empty-li {
+    display: none;
+  }
+}
+
+body {
+  position: relative;
+  font-family: "Object Sans";
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.2em;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.fixed-position {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.space-evenly {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pt-5 {
+  padding-top: 5em;
+}
+
+.pl-2 {
+  padding-left: 2em;
+}
+
+header {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header .line {
+  position: absolute;
+  width: 100%;
+  padding: 1em;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .line h1 {
+  font-size: 2em;
+  color: #fff;
+}
+
+header button {
+  font-size: 1em;
+  letter-spacing: 0.2em;
+  color: #fff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+header .close {
+  z-index: 5;
+}
+
+header nav {
+  display: none;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+  z-index: 4;
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  header nav {
+    height: -webkit-fill-available;
+  }
+}
+
+header nav ul {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+@media only screen and (max-width: 768px) {
+  header nav ul {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    height: auto;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+header nav ul li {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  padding-top: 5em;
+  font-size: 1.6em;
+}
+
+@media only screen and (max-width: 768px) {
+  header nav ul li {
+    border: none;
+    text-align: left;
+    padding-left: 1em;
+    padding-top: 2em;
+  }
+}
+
+header nav ul li a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: #fff;
+}
+
+header .nav-bottom {
+  padding: 1em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+header .nav-bottom a {
+  font-size: 1em;
+  letter-spacing: 0.2em;
+  color: #fff;
+  background: transparent;
+  border: none;
+}
+
+.primary-button {
+  font-size: 1em;
+  letter-spacing: 0.2em;
+  color: #fff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.sticky-bottom {
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em;
+  z-index: 1;
+}
+
+.loading {
+  height: 100vh;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loading h1 {
+  color: #fff;
+  font-size: 2.5em;
+  font-family: "Object Sans";
+  font-style: normal;
+  line-height: 2.5em;
+  letter-spacing: 0.2em;
+  font-weight: 200;
+}
+
+.section-1 {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../assets/images/main-background.png");
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Object Sans";
+}
+
+@media only screen and (max-width: 768px) {
+  .section-1 {
+    height: -webkit-fill-available;
+    background-image: url("../assets/images/main-background-mobile.png");
+  }
+}
+
+.section-1 p {
+  width: 50vw;
+  font-size: 6em;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  color: #fff;
+  padding-left: 40vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-1 p {
+    width: 80%;
+    padding-left: 0;
+    font-size: 3em;
+    margin: auto;
+  }
+}
+
+.section-2 {
+  height: 100vh;
+  background-image: url("../assets/images/estates-background.png");
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Object Sans";
+}
+
+@media only screen and (max-width: 768px) {
+  .section-2 {
+    height: -webkit-fill-available;
+    background-image: url("../assets/images/estates-background-mobile.png");
+  }
+}
+
+.section-2 .center-box {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-2 .center-box .main-header {
+  font-size: 10em;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-2 .center-box .main-header {
+    font-size: 3em;
+  }
+}
+
+.section-2 .center-box .italic-comment {
+  font-size: 6em;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  color: #fff;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-2 .center-box .italic-comment {
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section-2 .center-box .mob-but {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-2 .center-box .mob-but button {
+    padding-top: 1em;
+  }
+}
+
+.section-3 {
+  height: 100vh;
+  background-image: url("../assets/images/brands-background.png");
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Object Sans";
+}
+
+@media only screen and (max-width: 768px) {
+  .section-3 {
+    height: -webkit-fill-available;
+    background-image: url("../assets/images/brands-background-mobile.png");
+  }
+}
+
+.section-3 .center-box {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-3 .center-box {
+    width: 80%;
+  }
+}
+
+.section-3 .center-box .main-header {
+  font-size: 9em;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  color: #fff;
+  word-spacing: 100vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-3 .center-box .main-header {
+    font-size: 3em;
+  }
+}
+
+.section-4 {
+  height: 100vh;
+  background-image: url("../assets/images/strategy-background.png");
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Object Sans";
+}
+
+@media only screen and (max-width: 768px) {
+  .section-4 {
+    height: -webkit-fill-available;
+    background-image: url("../assets/images/strategy-background-mobile.png");
+  }
+}
+
+.section-4 .center-box {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-4 .center-box {
+    width: 80%;
+  }
+}
+
+.section-4 .center-box .main-header {
+  font-size: 9em;
+  font-style: normal;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-4 .center-box .main-header {
+    font-size: 3em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
