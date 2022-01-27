@@ -180,6 +180,28 @@ table {
   }
 }
 
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    height: -webkit-fill-available;
+  }
+}
+
 body {
   position: relative;
   font-family: "Object Sans";
@@ -399,23 +421,11 @@ header .nav-bottom a {
 }
 
 .section-1 {
-  height: 100vh;
-  width: 100vw;
   background-image: url("../assets/images/main-background.png");
-  background-position: center;
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: "Object Sans";
 }
 
 @media only screen and (max-width: 768px) {
   .section-1 {
-    height: -webkit-fill-available;
     background-image: url("../assets/images/main-background-mobile.png");
   }
 }
@@ -427,7 +437,7 @@ header .nav-bottom a {
   font-style: normal;
   font-weight: bold;
   color: #fff;
-  padding-left: 40vw;
+  padding-left: 20%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -440,25 +450,11 @@ header .nav-bottom a {
 }
 
 .section-2 {
-  height: 100vh;
   background-image: url("../assets/images/estates-background.png");
-  background-position: center;
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: "Object Sans";
 }
 
 @media only screen and (max-width: 768px) {
   .section-2 {
-    height: -webkit-fill-available;
     background-image: url("../assets/images/estates-background-mobile.png");
   }
 }
@@ -518,25 +514,11 @@ header .nav-bottom a {
 }
 
 .section-3 {
-  height: 100vh;
   background-image: url("../assets/images/brands-background.png");
-  background-position: center;
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: "Object Sans";
 }
 
 @media only screen and (max-width: 768px) {
   .section-3 {
-    height: -webkit-fill-available;
     background-image: url("../assets/images/brands-background-mobile.png");
   }
 }
@@ -576,25 +558,11 @@ header .nav-bottom a {
 }
 
 .section-4 {
-  height: 100vh;
   background-image: url("../assets/images/strategy-background.png");
-  background-position: center;
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: "Object Sans";
 }
 
 @media only screen and (max-width: 768px) {
   .section-4 {
-    height: -webkit-fill-available;
     background-image: url("../assets/images/strategy-background-mobile.png");
   }
 }

@@ -1,15 +1,6 @@
 .section-1 {
-  height: 100vh;
-  width: 100vw;
   background-image: url("../assets/images/main-background.png");
-  background-position: center;
-  background-size: cover;
-  display: flex;
-
-  align-items: center;
-  font-family: "Object Sans";
   @media only screen and (max-width: 768px) {
-    height: -webkit-fill-available;
     background-image: url("../assets/images/main-background-mobile.png");
   }
   p {
@@ -19,7 +10,7 @@
     font-style: normal;
     font-weight: bold;
     color: #fff;
-    padding-left: 40vw;
+    padding-left: 20%;
     @media only screen and (max-width: 768px) {
       width: 80%;
       padding-left: 0;
@@ -30,17 +21,8 @@
 }
 
 .section-2 {
-  height: 100vh;
   background-image: url("../assets/images/estates-background.png");
-
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Object Sans";
   @media only screen and (max-width: 768px) {
-    height: -webkit-fill-available;
     background-image: url("../assets/images/estates-background-mobile.png");
   }
   .center-box {
@@ -80,16 +62,8 @@
 }
 
 .section-3 {
-  height: 100vh;
   background-image: url("../assets/images/brands-background.png");
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Object Sans";
   @media only screen and (max-width: 768px) {
-    height: -webkit-fill-available;
     background-image: url("../assets/images/brands-background-mobile.png");
   }
   .center-box {
@@ -116,16 +90,8 @@
 }
 
 .section-4 {
-  height: 100vh;
   background-image: url("../assets/images/strategy-background.png");
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Object Sans";
   @media only screen and (max-width: 768px) {
-    height: -webkit-fill-available;
     background-image: url("../assets/images/strategy-background-mobile.png");
   }
   .center-box {
