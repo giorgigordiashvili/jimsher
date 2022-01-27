@@ -1224,4 +1224,151 @@ header .nav-bottom a {
     height: 50vh;
   }
 }
+
+.history-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.history-1 h1 {
+  padding-bottom: 6em;
+}
+
+.history-1 img {
+  padding-bottom: 8em;
+}
+
+.history-1 p {
+  width: 40%;
+  text-align: center;
+  line-height: 2em;
+}
+
+.history-2 {
+  background: #000;
+}
+
+.history-3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.history-3 .left {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  justify-self: flex-end;
+}
+
+.history-3 .left img {
+  width: 80%;
+}
+
+.history-3 .right {
+  width: 50%;
+  padding-left: 5em;
+}
+
+.history-3 .right p {
+  line-height: 1.5em;
+}
+
+.history-4 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.history-4 .right {
+  justify-self: flex-start;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.history-4 .right img {
+  width: 80%;
+}
+
+.history-4 .left {
+  justify-self: flex-end;
+  width: 50%;
+  padding-right: 5em;
+}
+
+.history-4 .left p {
+  line-height: 1.5em;
+  padding-bottom: 1em;
+}
+
+.history-5 {
+  background-image: url("../assets/images/history/6.png");
+}
+
+.history-6 h2 {
+  text-transform: uppercase;
+}
+
+.history-7 {
+  background-image: url("../assets/images/history/7.png");
+  position: relative;
+}
+
+.history-7 h3 {
+  position: absolute;
+  bottom: 45em;
+  left: 6em;
+  width: 25%;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.history-7 p {
+  position: absolute;
+  width: 42%;
+  bottom: 5em;
+  right: 6em;
+  color: #fff;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+
+.history-8 {
+  background-image: url("../assets/images/history/8.png");
+  position: relative;
+}
+
+.history-10 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.history-10 p {
+  width: 50%;
+  text-transform: uppercase;
+}
+
+.history-10 .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.history-11 {
+  background-image: url("../assets/images/history/9.png");
+  position: relative;
+}
 /*# sourceMappingURL=main.css.map */
