@@ -308,6 +308,13 @@ body {
   display: flex;
 }
 
+.column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .space-evenly {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -1106,6 +1113,115 @@ header .nav-bottom a {
 @media only screen and (max-width: 768px) {
   .strategy {
     background-image: url("../assets/images/strategy/map-mobile.svg");
+  }
+}
+
+.contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 6fr 4fr;
+      grid-template-columns: 6fr 4fr;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.contact .left {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact .left {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding-top: 5em;
+    padding-left: 1em;
+  }
+}
+
+.contact .left h1 {
+  color: #000;
+  font-size: 4em;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact .left h1 {
+    padding-bottom: 0.5em;
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact .left .empty {
+    display: none;
+  }
+}
+
+.contact .left .topleft {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  justify-self: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact .left .topleft {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    justify-self: flex-start;
+    padding-bottom: 2em;
+  }
+}
+
+.contact .left .bottomleft {
+  justify-self: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact .left .bottomleft {
+    justify-self: flex-start;
+    padding-bottom: 2em;
+  }
+}
+
+.contact .left .bottomright {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact .left .bottomright {
+    justify-self: flex-start;
+  }
+}
+
+.contact .right {
+  height: 100%;
+  cursor: pointer;
+  background-image: url("../assets/images/contact/map.svg");
+  background-position: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact .right {
+    height: 50vh;
   }
 }
 /*# sourceMappingURL=main.css.map */

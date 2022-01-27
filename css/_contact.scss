@@ -1,0 +1,64 @@
+.contact {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+  .left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      padding-top: 5em;
+      padding-left: 1em;
+    }
+    h1 {
+      color: #000;
+      font-size: 4em;
+      @media only screen and (max-width: 768px) {
+        padding-bottom: 0.5em;
+        font-size: 2em;
+      }
+    }
+    .empty {
+      @media only screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+    .topleft {
+      align-self: flex-end;
+      justify-self: flex-end;
+      @media only screen and (max-width: 768px) {
+        align-self: flex-start;
+        justify-self: flex-start;
+        padding-bottom: 2em;
+      }
+    }
+    .bottomleft {
+      justify-self: flex-end;
+      @media only screen and (max-width: 768px) {
+        justify-self: flex-start;
+        padding-bottom: 2em;
+      }
+    }
+    .bottomright {
+      justify-self: center;
+      @media only screen and (max-width: 768px) {
+        justify-self: flex-start;
+      }
+    }
+  }
+  .right {
+    height: 100%;
+    cursor: pointer;
+    background-image: url("../assets/images/contact/map.svg");
+    background-position: center;
+    @media only screen and (max-width: 768px) {
+      height: 50vh;
+    }
+  }
+}
