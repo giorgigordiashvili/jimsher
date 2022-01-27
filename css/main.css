@@ -202,6 +202,50 @@ table {
   }
 }
 
+.half-container {
+  height: 70vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .half-container {
+    height: -webkit-fill-available;
+  }
+}
+
+.double-container {
+  height: 150vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .double-container {
+    height: -webkit-fill-available;
+  }
+}
+
 body {
   position: relative;
   font-family: "Object Sans";
@@ -210,6 +254,12 @@ body {
   letter-spacing: 0.2em;
   width: 100vw;
   overflow-x: hidden;
+}
+
+@media only screen and (max-width: 1366px) {
+  body {
+    font-size: 12px;
+  }
 }
 
 .fixed-position {
@@ -677,5 +727,248 @@ header .nav-bottom a {
   transition: 0.5s ease;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+}
+
+.jimsher-1 {
+  background-color: #141414;
+  background-image: url("../assets/images/jimsher/1.png");
+  position: relative;
+}
+
+.jimsher-1 .nav-secondary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  width: 55%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em 0;
+  top: 0;
+  z-index: 6;
+}
+
+.jimsher-1 .nav-secondary a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.jimsher-1 .nav-secondary a:hover {
+  color: #fff;
+}
+
+.jimsher-1 h1 {
+  font-size: 9em;
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  color: #fff;
+  letter-spacing: 0.2em;
+}
+
+.jimsher-2 {
+  background-color: #141414;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.jimsher-2 .text {
+  width: 60%;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.jimsher-3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.jimsher-3 .left {
+  height: 100%;
+  background-image: url("../assets/images/jimsher/2.png");
+}
+
+.jimsher-3 .right {
+  height: 100%;
+  background-image: url("../assets/images/jimsher/3.png");
+}
+
+.jimsher-4 {
+  background-color: #141414;
+}
+
+.jimsher-4 p {
+  font-size: 6em;
+  text-transform: uppercase;
+  width: 50%;
+  color: #fff;
+}
+
+.jimsher-5 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  background-color: #141414;
+}
+
+.jimsher-5 .left {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  width: 50%;
+  color: #fff;
+  margin: auto;
+}
+
+.jimsher-5 .right img {
+  width: 70%;
+}
+
+.jimsher-6 {
+  background-color: #141414;
+  background-image: url("../assets/images/jimsher/5.png");
+}
+
+.jimsher-7 {
+  background-color: #141414;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.jimsher-7 .center-text {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 60%;
+}
+
+.jimsher-7 .center-text img {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 100%;
+}
+
+.jimsher-7 .center-text .big {
+  width: 50%;
+  position: absolute;
+  top: -2em;
+  left: -3em;
+  font-size: 6em;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.jimsher-7 .center-text .small {
+  width: 22em;
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+  font-size: 1em;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.jimsher-8 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  background-color: #141414;
+}
+
+.jimsher-8 .left {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.jimsher-8 .left p {
+  font-size: 6em;
+  text-transform: uppercase;
+  width: 100%;
+  color: #fff;
+  margin: auto;
+  text-align: right;
+}
+
+.jimsher-8 .right {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding-bottom: 2em;
+}
+
+.jimsher-8 .right p {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  width: 50%;
+  color: #fff;
+  margin: auto;
+}
+
+.jimsher-9 {
+  background-color: #141414;
+  background-image: url("../assets/images/jimsher/7.png");
+}
+
+.jimsher-10 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  background-color: #141414;
+}
+
+.jimsher-10 .right p {
+  font-size: 6em;
+  text-transform: uppercase;
+  width: 70%;
+  color: #fff;
+  margin: auto;
+}
+
+.jimsher-11 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 7fr 3fr;
+      grid-template-columns: 7fr 3fr;
+  background-color: #141414;
+  overflow: hidden;
+}
+
+.jimsher-11 .left {
+  position: relative;
+}
+
+.jimsher-11 .left img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.jimsher-11 .left p {
+  font-size: 1.5em;
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 90%;
+  width: 30%;
 }
 /*# sourceMappingURL=main.css.map */
