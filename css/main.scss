@@ -100,6 +100,10 @@ body {
   display: flex;
 }
 
+.column {
+  flex-direction: column;
+}
+
 .space-evenly {
   justify-content: space-evenly;
 }
@@ -250,3 +254,4 @@ header {
 @import "./jimsher";
 @import "./blog";
 @import "./strategy";
+@import "./contact";
