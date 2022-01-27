@@ -1096,4 +1096,16 @@ header .nav-bottom a {
 .blog .blogs-container::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 0, 0, 0.5);
 }
+
+.strategy {
+  background-image: url("../assets/images/strategy/map.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+  .strategy {
+    background-image: url("../assets/images/strategy/map-mobile.svg");
+  }
+}
 /*# sourceMappingURL=main.css.map */

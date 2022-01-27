@@ -1,0 +1,8 @@
+.strategy {
+  background-image: url("../assets/images/strategy/map.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media only screen and (max-width: 768px) {
+    background-image: url("../assets/images/strategy/map-mobile.svg");
+  }
+}
