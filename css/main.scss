@@ -31,6 +31,31 @@
     height: -webkit-fill-available;
   }
 }
+.half-container {
+  height: 70vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media only screen and (max-width: 768px) {
+    height: -webkit-fill-available;
+  }
+}
+
+.double-container {
+  height: 150vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media only screen and (max-width: 768px) {
+    height: -webkit-fill-available;
+  }
+}
 body {
   position: relative;
   font-family: "Object Sans";
@@ -39,6 +64,9 @@ body {
   letter-spacing: 0.2em;
   width: 100vw;
   overflow-x: hidden;
+  @media only screen and (max-width: 1366px) {
+    font-size: 12px;
+  }
 }
 .fixed-position {
   position: fixed;
@@ -207,3 +235,4 @@ header {
 @import "./homepage";
 @import "./firstpage";
 @import "./brands";
+@import "./jimsher";
