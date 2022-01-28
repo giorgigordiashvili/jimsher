@@ -46,12 +46,15 @@
     grid-gap: 3em;
 
     .blogpost {
+      img {
+        width: 30vw;
+      }
       &:hover {
         transition: 300ms all ease;
         transform: scale(1.01);
       }
       p {
-        padding-top: 2em;
+        padding: 2em 0;
         font-size: 1.5em;
         text-transform: uppercase;
         color: #000;
@@ -63,7 +66,7 @@
 
     /* Track */
     &::-webkit-scrollbar-track {
-      background: red;
+      background: transparent;
     }
 
     /* Handle */

@@ -1074,6 +1074,10 @@ header .nav-bottom a {
   /* Handle on hover */
 }
 
+.blog .blogs-container .blogpost img {
+  width: 30vw;
+}
+
 .blog .blogs-container .blogpost:hover {
   -webkit-transition: 300ms all ease;
   transition: 300ms all ease;
@@ -1082,7 +1086,7 @@ header .nav-bottom a {
 }
 
 .blog .blogs-container .blogpost p {
-  padding-top: 2em;
+  padding: 2em 0;
   font-size: 1.5em;
   text-transform: uppercase;
   color: #000;
@@ -1093,7 +1097,7 @@ header .nav-bottom a {
 }
 
 .blog .blogs-container::-webkit-scrollbar-track {
-  background: red;
+  background: transparent;
 }
 
 .blog .blogs-container::-webkit-scrollbar-thumb {
