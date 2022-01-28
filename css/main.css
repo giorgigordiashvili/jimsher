@@ -1093,7 +1093,7 @@ header .nav-bottom a {
 }
 
 .blog .blogs-container::-webkit-scrollbar-track {
-  background: transparent;
+  background: red;
 }
 
 .blog .blogs-container::-webkit-scrollbar-thumb {
@@ -1501,6 +1501,7 @@ header .nav-bottom a {
 }
 
 .estate {
+  overflow: hidden;
   background-color: #000;
   background-image: url("../assets/images/estate/background.png");
   background-size: contain;
@@ -1518,7 +1519,104 @@ header .nav-bottom a {
   }
 }
 
-.estate ul {
+.estate .modal {
+  z-index: 999;
+  position: absolute;
+  right: 0;
+  width: 40vw;
+  height: 100vh;
+  background-color: #fff;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.estate .modal #museumclose {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  cursor: pointer;
+}
+
+.estate .modal .cont {
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  overflow-y: scroll;
+  height: 90%;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  padding: 4em 8em;
+}
+
+.estate .modal .cont::-webkit-scrollbar {
+  width: 1px;
+}
+
+.estate .modal .cont::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.estate .modal .cont::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+.estate .modal .cont::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.estate .modal .cont h2 {
+  font-size: 2.5em;
+  padding-bottom: 1em;
+}
+
+.estate .modal .cont img {
+  width: 50%;
+}
+
+.estate .modal .cont p {
+  padding-top: 2em;
+}
+
+.estate .modal .cont .tt {
+  padding-bottom: 3em;
+}
+
+.estate .categories {
+  position: absolute;
+  left: 0;
+}
+
+.estate .categories ul {
+  margin-left: 1em;
+}
+
+.estate .categories ul li {
+  padding: 1em 0;
+}
+
+.estate .categories ul li a {
+  color: #fff;
+}
+
+.estate .emptyul {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -1533,7 +1631,7 @@ header .nav-bottom a {
 }
 
 @media only screen and (max-width: 768px) {
-  .estate ul {
+  .estate .emptyul {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     height: auto;
@@ -1543,16 +1641,78 @@ header .nav-bottom a {
   }
 }
 
-.estate ul li {
+.estate .emptyul .empty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   border-right: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
-  padding-top: 5em;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   font-size: 1.6em;
+  position: relative;
+}
+
+.estate .emptyul .empty .museum {
+  color: #fff;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 3em;
+  text-align: right;
+  position: absolute;
+  left: 2em;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.15);
+  -webkit-transition: 300ms all ease;
+  transition: 300ms all ease;
+}
+
+.estate .emptyul .empty .museum:hover {
+  color: #fff;
+}
+
+.estate .emptyul .empty .guria {
+  color: #fff;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 3em;
+  text-align: right;
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.15);
+  -webkit-transition: 300ms all ease;
+  transition: 300ms all ease;
+}
+
+.estate .emptyul .empty .guria:hover {
+  color: #fff;
+}
+
+.estate .emptyul .empty .kakheti {
+  color: #fff;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 3em;
+  text-align: right;
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.15);
+  -webkit-transition: 300ms all ease;
+  transition: 300ms all ease;
+}
+
+.estate .emptyul .empty .kakheti:hover {
+  color: #fff;
 }
 
 @media only screen and (max-width: 768px) {
-  .estate ul li {
+  .estate .emptyul .empty {
     border: none;
     text-align: left;
     padding-left: 1em;
@@ -1560,12 +1720,12 @@ header .nav-bottom a {
   }
 }
 
-.estate ul li a {
+.estate .emptyul .empty a {
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
 }
 
-.estate ul li a:hover {
+.estate .emptyul .empty a:hover {
   color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

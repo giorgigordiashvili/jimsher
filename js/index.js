@@ -14,3 +14,17 @@ $(function () {
     }
   });
 });
+
+$(function () {
+  $("#museum").click(function () {
+    console.log("Test");
+    $("#museummodal").slideToggle();
+  });
+});
+
+$(function () {
+  $("#museumclose").click(function () {
+    console.log("Test");
+    $("#museummodal").slideToggle();
+  });
+});

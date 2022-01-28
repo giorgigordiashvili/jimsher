@@ -1,4 +1,5 @@
 .estate {
+  overflow: hidden;
   background-color: #000;
   background-image: url("../assets/images/estate/background.png");
   background-size: contain;
@@ -11,7 +12,82 @@
   @media only screen and (max-width: 768px) {
     height: -webkit-fill-available;
   }
-  ul {
+
+  .modal {
+    z-index: 999;
+    position: absolute;
+    right: 0;
+    width: 40vw;
+    height: 100vh;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    #museumclose {
+      position: absolute;
+      right: 1em;
+      top: 1em;
+      cursor: pointer;
+    }
+    .cont {
+      &::-webkit-scrollbar {
+        width: 1px;
+      }
+
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: #000;
+      }
+
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 0, 0, 0.5);
+      }
+      align-self: flex-end;
+      overflow-y: scroll;
+      height: 90%;
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin: auto;
+      padding: 4em 8em;
+      h2 {
+        font-size: 2.5em;
+        padding-bottom: 1em;
+      }
+      img {
+        width: 50%;
+      }
+      p {
+        padding-top: 2em;
+      }
+      .tt {
+        padding-bottom: 3em;
+      }
+    }
+  }
+
+  .categories {
+    position: absolute;
+    left: 0;
+    ul {
+      margin-left: 1em;
+      li {
+        padding: 1em 0;
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .emptyul {
     flex: 1;
     width: 100%;
     height: 100%;
@@ -23,13 +99,60 @@
       height: auto;
       align-self: center;
     }
-    li {
+    .empty {
+      display: flex;
+      width: 100%;
+
       border-right: 1px solid rgba(255, 255, 255, 0.1);
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
       text-align: center;
-      padding-top: 5em;
+      justify-content: flex-end;
       font-size: 1.6em;
+      position: relative;
+      .museum {
+        color: #fff;
+        align-self: flex-end;
+        font-size: 3em;
+        text-align: right;
+        position: absolute;
+        left: 2em;
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.15);
+        transition: 300ms all ease;
+        &:hover {
+          color: #fff;
+        }
+      }
+      .guria {
+        color: #fff;
+        align-self: flex-end;
+        font-size: 3em;
+        text-align: right;
+        position: absolute;
+        left: 0;
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.15);
+        transition: 300ms all ease;
+        &:hover {
+          color: #fff;
+        }
+      }
+      .kakheti {
+        color: #fff;
+        align-self: flex-end;
+        font-size: 3em;
+        text-align: right;
+        position: absolute;
+        right: 1em;
+        top: 50%;
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.15);
+        transition: 300ms all ease;
+        &:hover {
+          color: #fff;
+        }
+      }
       @media only screen and (max-width: 768px) {
         border: none;
         text-align: left;
