@@ -17,14 +17,13 @@ $(function () {
 
 $(function () {
   $("#museum").click(function () {
-    console.log("Test");
     $("#museummodal").slideToggle();
+    $("#museummodal").css("display", "flex");
   });
 });
 
 $(function () {
   $("#museumclose").click(function () {
-    console.log("Test");
     $("#museummodal").slideToggle();
   });
 });
