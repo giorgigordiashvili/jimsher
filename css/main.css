@@ -1104,6 +1104,134 @@ header .nav-bottom a {
   background: rgba(0, 0, 0, 0.5);
 }
 
+.blogpost {
+  width: 70vw;
+}
+
+.blogpost-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.blogpost-header h1 {
+  font-size: 3em;
+  padding: 0.5em 0;
+  text-transform: uppercase;
+}
+
+.blogpost-header h2 {
+  text-transform: uppercase;
+  padding-top: 2em;
+  text-transform: uppercase;
+}
+
+.blogpost-header p {
+  text-transform: uppercase;
+}
+
+.blogpost-1 {
+  margin: auto;
+}
+
+.blogpost-1 img {
+  width: 100%;
+}
+
+.blogpost-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: auto;
+}
+
+.blogpost-2 p {
+  padding-top: 2em;
+}
+
+.blogpost-3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: auto;
+}
+
+.blogpost-3 .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.blogpost-3 .left p {
+  width: 50%;
+}
+
+.blogpost-3 .right img {
+  width: 100%;
+}
+
+.blogpost-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: auto;
+}
+
+.blogpost-4 p {
+  padding-top: 2em;
+}
+
+.blogpost-5 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  width: 80%;
+  grid-gap: 1em;
+  margin: auto;
+}
+
+.blogpost-5 .left img {
+  width: 100%;
+}
+
+.blogpost-5 .right img {
+  width: 100%;
+}
+
 .strategy {
   background-image: url("../assets/images/strategy/map.svg");
   background-size: contain;
