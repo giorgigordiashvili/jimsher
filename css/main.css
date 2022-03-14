@@ -198,7 +198,8 @@ table {
 
 @media only screen and (max-width: 768px) {
   .container {
-    height: -webkit-fill-available;
+    height: auto;
+    padding: 2em 1em;
   }
 }
 
@@ -242,7 +243,7 @@ table {
 
 @media only screen and (max-width: 768px) {
   .half-container {
-    height: -webkit-fill-available;
+    height: 30vh;
   }
 }
 
@@ -405,7 +406,7 @@ header nav {
 
 @media only screen and (max-width: 768px) {
   header nav {
-    height: -webkit-fill-available;
+    height: 100vh;
   }
 }
 
@@ -762,6 +763,13 @@ header .nav-bottom a {
   background-color: #141414;
   background-image: url("../assets/images/jimsher/1.png");
   position: relative;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .jimsher-1 {
+    height: -webkit-fill-available;
+  }
 }
 
 .jimsher-1 .nav-secondary {
@@ -776,6 +784,22 @@ header .nav-bottom a {
   padding: 2em 0;
   top: 0;
   z-index: 6;
+}
+
+@media only screen and (max-width: 768px) {
+  .jimsher-1 .nav-secondary {
+    width: 100%;
+    padding: 1em;
+    left: 0;
+    top: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-gap: 2em;
+    position: absolute;
+    z-index: 999;
+  }
 }
 
 .jimsher-1 .nav-secondary a {
@@ -795,6 +819,12 @@ header .nav-bottom a {
   letter-spacing: 0.2em;
 }
 
+@media only screen and (max-width: 768px) {
+  .jimsher-1 h1 {
+    font-size: 3em;
+  }
+}
+
 .jimsher-2 {
   background-color: #141414;
   display: -ms-grid;
@@ -803,10 +833,23 @@ header .nav-bottom a {
       grid-template-columns: 1fr 1fr;
 }
 
+@media only screen and (max-width: 768px) {
+  .jimsher-2 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .jimsher-2 .text {
   width: 60%;
   color: #fff;
   text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+  .jimsher-2 .text {
+    width: 100%;
+  }
 }
 
 .jimsher-3 {
@@ -821,9 +864,23 @@ header .nav-bottom a {
   background-image: url("../assets/images/jimsher/2.png");
 }
 
+@media only screen and (max-width: 768px) {
+  .jimsher-3 .left {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
 .jimsher-3 .right {
   height: 100%;
   background-image: url("../assets/images/jimsher/3.png");
+}
+
+@media only screen and (max-width: 768px) {
+  .jimsher-3 .right {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 .jimsher-4 {
@@ -837,12 +894,27 @@ header .nav-bottom a {
   color: #fff;
 }
 
+@media only screen and (max-width: 768px) {
+  .jimsher-4 p {
+    width: 100%;
+    font-size: 3em;
+    text-align: center;
+  }
+}
+
 .jimsher-5 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   background-color: #141414;
+}
+
+@media only screen and (max-width: 768px) {
+  .jimsher-5 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .jimsher-5 .left {
@@ -853,13 +925,32 @@ header .nav-bottom a {
   margin: auto;
 }
 
+@media only screen and (max-width: 768px) {
+  .jimsher-5 .left {
+    width: 100%;
+    padding: 2em 0;
+  }
+}
+
 .jimsher-5 .right img {
   width: 70%;
+}
+
+@media only screen and (max-width: 768px) {
+  .jimsher-5 .right img {
+    width: 100%;
+  }
 }
 
 .jimsher-6 {
   background-color: #141414;
   background-image: url("../assets/images/jimsher/5.png");
+}
+
+@media only screen and (max-width: 768px) {
+  .jimsher-6 {
+    height: 30vh;
+  }
 }
 
 .jimsher-7 {
@@ -870,6 +961,12 @@ header .nav-bottom a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+  .jimsher-7 {
+    padding: 1em;
+  }
 }
 
 .jimsher-7 .center-text {
@@ -886,6 +983,19 @@ header .nav-bottom a {
   width: 60%;
 }
 
+@media only screen and (max-width: 768px) {
+  .jimsher-7 .center-text {
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .jimsher-7 .center-text img {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -900,6 +1010,16 @@ header .nav-bottom a {
   font-size: 6em;
   color: #fff;
   text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+  .jimsher-7 .center-text .big {
+    width: 100%;
+    position: relative;
+    font-size: 2em;
+    top: auto;
+    left: auto;
+  }
 }
 
 .jimsher-7 .center-text .small {
@@ -920,6 +1040,14 @@ header .nav-bottom a {
   background-color: #141414;
 }
 
+@media only screen and (max-width: 768px) {
+  .jimsher-8 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 1em;
+  }
+}
+
 .jimsher-8 .left {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -933,6 +1061,13 @@ header .nav-bottom a {
   color: #fff;
   margin: auto;
   text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+  .jimsher-8 .left p {
+    font-size: 2em;
+    text-align: left;
+  }
 }
 
 .jimsher-8 .right {
@@ -949,9 +1084,22 @@ header .nav-bottom a {
   margin: auto;
 }
 
+@media only screen and (max-width: 768px) {
+  .jimsher-8 .right p {
+    width: 100%;
+  }
+}
+
 .jimsher-9 {
   background-color: #141414;
   background-image: url("../assets/images/jimsher/7.png");
+}
+
+@media only screen and (max-width: 768px) {
+  .jimsher-9 {
+    height: 30vh;
+    padding: 1em;
+  }
 }
 
 .jimsher-10 {
@@ -962,12 +1110,27 @@ header .nav-bottom a {
   background-color: #141414;
 }
 
+@media only screen and (max-width: 768px) {
+  .jimsher-10 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 1em;
+  }
+}
+
 .jimsher-10 .right p {
   font-size: 6em;
   text-transform: uppercase;
   width: 70%;
   color: #fff;
   margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .jimsher-10 .right p {
+    width: 100%;
+    font-size: 2em;
+  }
 }
 
 .jimsher-11 {
@@ -977,6 +1140,14 @@ header .nav-bottom a {
       grid-template-columns: 7fr 3fr;
   background-color: #141414;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .jimsher-11 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 1em;
+  }
 }
 
 .jimsher-11 .left {
@@ -1001,6 +1172,17 @@ header .nav-bottom a {
   width: 30%;
 }
 
+@media only screen and (max-width: 768px) {
+  .jimsher-11 .left p {
+    top: auto;
+    position: relative;
+    left: auto;
+    width: 100%;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
 .blog-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1010,6 +1192,18 @@ header .nav-bottom a {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  .blog-header {
+    padding-top: 4rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .blog-header .line {
+    display: none;
+  }
 }
 
 .blog-header h1 {
@@ -1022,9 +1216,21 @@ header .nav-bottom a {
   padding-top: 2em;
 }
 
+@media only screen and (max-width: 768px) {
+  .blog-header h2 {
+    display: none;
+  }
+}
+
 .blog-header .blog-circle {
   right: 4em;
   position: absolute;
+}
+
+@media only screen and (max-width: 768px) {
+  .blog-header .blog-circle {
+    display: none;
+  }
 }
 
 .blog {
@@ -1037,8 +1243,22 @@ header .nav-bottom a {
           align-items: flex-start;
 }
 
+@media only screen and (max-width: 768px) {
+  .blog {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 1em;
+  }
+}
+
 .blog ul {
   padding-left: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+  .blog ul {
+    display: none;
+  }
 }
 
 .blog ul li {
@@ -1061,7 +1281,7 @@ header .nav-bottom a {
 
 .blog .blogs-container {
   height: 100%;
-  width: 95%;
+  width: 100%;
   overflow-y: scroll;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1074,8 +1294,20 @@ header .nav-bottom a {
   /* Handle on hover */
 }
 
+@media only screen and (max-width: 768px) {
+  .blog .blogs-container .blogpost {
+    width: 100%;
+  }
+}
+
 .blog .blogs-container .blogpost img {
   width: 30vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .blog .blogs-container .blogpost img {
+    width: 100%;
+  }
 }
 
 .blog .blogs-container .blogpost:hover {
@@ -1090,6 +1322,12 @@ header .nav-bottom a {
   font-size: 1.5em;
   text-transform: uppercase;
   color: #000;
+}
+
+@media only screen and (max-width: 768px) {
+  .blog .blogs-container .blogpost p {
+    text-align: center;
+  }
 }
 
 .blog .blogs-container::-webkit-scrollbar {
@@ -1112,6 +1350,13 @@ header .nav-bottom a {
   width: 70vw;
 }
 
+@media only screen and (max-width: 768px) {
+  .blogpost-container {
+    width: 100%;
+    padding: 1em;
+  }
+}
+
 .blogpost-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1129,10 +1374,16 @@ header .nav-bottom a {
   text-transform: uppercase;
 }
 
+@media only screen and (max-width: 768px) {
+  .blogpost-header h1 {
+    text-align: center;
+    padding: 2rem 0;
+  }
+}
+
 .blogpost-header h2 {
   text-transform: uppercase;
   padding-top: 2em;
-  text-transform: uppercase;
 }
 
 .blogpost-header p {
@@ -1169,6 +1420,13 @@ header .nav-bottom a {
   padding-top: 2em;
 }
 
+@media only screen and (max-width: 768px) {
+  .blogpost-2 {
+    width: 100%;
+    padding: 0 1em;
+  }
+}
+
 .blogpost-3 {
   display: -ms-grid;
   display: grid;
@@ -1176,6 +1434,15 @@ header .nav-bottom a {
       grid-template-columns: 1fr 1fr;
   width: 80%;
   margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .blogpost-3 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0 1em;
+  }
 }
 
 .blogpost-3 .left {
@@ -1190,6 +1457,12 @@ header .nav-bottom a {
 
 .blogpost-3 .left p {
   width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .blogpost-3 .left p {
+    width: 100%;
+  }
 }
 
 .blogpost-3 .right img {
@@ -1214,6 +1487,13 @@ header .nav-bottom a {
   margin: auto;
 }
 
+@media only screen and (max-width: 768px) {
+  .blogpost-4 {
+    width: 100%;
+    padding: 0 1em;
+  }
+}
+
 .blogpost-4 p {
   padding-top: 2em;
 }
@@ -1226,6 +1506,15 @@ header .nav-bottom a {
   width: 80%;
   grid-gap: 1em;
   margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .blogpost-5 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0 1em;
+  }
 }
 
 .blogpost-5 .left img {
@@ -1381,6 +1670,13 @@ header .nav-bottom a {
   line-height: 2em;
 }
 
+@media only screen and (max-width: 768px) {
+  .history-1 p {
+    width: 100%;
+    padding: 0 1em;
+  }
+}
+
 .history-2 {
   background: #000;
 }
@@ -1392,6 +1688,13 @@ header .nav-bottom a {
       grid-template-columns: 1fr 1fr;
 }
 
+@media only screen and (max-width: 768px) {
+  .history-3 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .history-3 .left {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -1401,6 +1704,12 @@ header .nav-bottom a {
 
 .history-3 .left img {
   width: 80%;
+}
+
+@media only screen and (max-width: 768px) {
+  .history-3 .left img {
+    width: 100%;
+  }
 }
 
 .history-3 .right {
@@ -1419,6 +1728,13 @@ header .nav-bottom a {
       grid-template-columns: 1fr 1fr;
 }
 
+@media only screen and (max-width: 768px) {
+  .history-4 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .history-4 .right {
   justify-self: flex-start;
   -ms-flex-item-align: center;
@@ -1430,10 +1746,23 @@ header .nav-bottom a {
   width: 80%;
 }
 
+@media only screen and (max-width: 768px) {
+  .history-4 .right img {
+    width: 100%;
+  }
+}
+
 .history-4 .left {
   justify-self: flex-end;
   width: 50%;
   padding-right: 5em;
+}
+
+@media only screen and (max-width: 768px) {
+  .history-4 .left {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .history-4 .left p {
@@ -1485,6 +1814,13 @@ header .nav-bottom a {
       grid-template-columns: 1fr 1fr;
 }
 
+@media only screen and (max-width: 768px) {
+  .history-10 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .history-10 p {
   width: 50%;
   text-transform: uppercase;
@@ -1519,7 +1855,9 @@ header .nav-bottom a {
 
 @media only screen and (max-width: 768px) {
   .estate {
-    height: -webkit-fill-available;
+    height: 100vh;
+    background-size: cover;
+    background-image: url("../assets/images/estate/background-mobile.png");
   }
 }
 
@@ -1536,6 +1874,12 @@ header .nav-bottom a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+  .estate .modal {
+    width: 100%;
+  }
 }
 
 .estate .modal #museumclose {
@@ -1584,6 +1928,12 @@ header .nav-bottom a {
   background: rgba(0, 0, 0, 0.5);
 }
 
+@media only screen and (max-width: 768px) {
+  .estate .modal .cont {
+    padding: 1rem;
+  }
+}
+
 .estate .modal .cont h2 {
   font-size: 2.5em;
   padding-bottom: 1em;
@@ -1604,6 +1954,12 @@ header .nav-bottom a {
 .estate .categories {
   position: absolute;
   left: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .estate .categories {
+    display: none;
+  }
 }
 
 .estate .categories ul {
@@ -1658,6 +2014,14 @@ header .nav-bottom a {
   position: relative;
 }
 
+@media only screen and (max-width: 768px) {
+  .estate .emptyul .empty {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .estate .emptyul .empty .museum {
   color: #fff;
   -ms-flex-item-align: end;
@@ -1676,6 +2040,14 @@ header .nav-bottom a {
   color: #fff;
 }
 
+@media only screen and (max-width: 768px) {
+  .estate .emptyul .empty .museum {
+    position: relative;
+    left: auto;
+    text-align: center;
+  }
+}
+
 .estate .emptyul .empty .guria {
   color: #fff;
   -ms-flex-item-align: end;
@@ -1692,6 +2064,17 @@ header .nav-bottom a {
 
 .estate .emptyul .empty .guria:hover {
   color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .estate .emptyul .empty .guria {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    left: auto;
+    text-align: center;
+  }
 }
 
 .estate .emptyul .empty .kakheti {
@@ -1714,10 +2097,21 @@ header .nav-bottom a {
 }
 
 @media only screen and (max-width: 768px) {
+  .estate .emptyul .empty .kakheti {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    position: relative;
+    right: auto;
+    top: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .estate .emptyul .empty {
     border: none;
     text-align: left;
-    padding-left: 1em;
+    padding: 1em;
     padding-top: 2em;
   }
 }

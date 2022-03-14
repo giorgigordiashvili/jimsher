@@ -11,6 +11,10 @@
     width: 40%;
     text-align: center;
     line-height: 2em;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      padding: 0 1em;
+    }
   }
 }
 
@@ -21,11 +25,17 @@
 .history-3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
   .left {
     align-self: center;
     justify-self: flex-end;
     img {
       width: 80%;
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+      }
     }
   }
   .right {
@@ -40,17 +50,27 @@
 .history-4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
   .right {
     justify-self: flex-start;
     align-self: center;
     img {
       width: 80%;
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+      }
     }
   }
   .left {
     justify-self: flex-end;
     width: 50%;
     padding-right: 5em;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      padding: 0;
+    }
     p {
       line-height: 1.5em;
       padding-bottom: 1em;
@@ -97,6 +117,9 @@
 .history-10 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
   p {
     width: 50%;
     text-transform: uppercase;

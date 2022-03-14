@@ -10,7 +10,9 @@
   width: 100vw;
   position: relative;
   @media only screen and (max-width: 768px) {
-    height: -webkit-fill-available;
+    height: 100vh;
+    background-size: cover;
+    background-image: url("../assets/images/estate/background-mobile.png");
   }
 
   .modal {
@@ -24,6 +26,9 @@
     color: #000;
 
     flex-direction: column;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
     #museumclose {
       position: absolute;
       right: 1em;
@@ -59,6 +64,9 @@
 
       margin: auto;
       padding: 4em 8em;
+      @media only screen and (max-width: 768px) {
+        padding: 1rem;
+      }
       h2 {
         font-size: 2.5em;
         padding-bottom: 1em;
@@ -78,6 +86,9 @@
   .categories {
     position: absolute;
     left: 0;
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
     ul {
       margin-left: 1em;
       li {
@@ -111,6 +122,9 @@
       justify-content: flex-end;
       font-size: 1.6em;
       position: relative;
+      @media only screen and (max-width: 768px) {
+        justify-content: center;
+      }
       .museum {
         color: #fff;
         align-self: flex-end;
@@ -123,6 +137,11 @@
         transition: 300ms all ease;
         &:hover {
           color: #fff;
+        }
+        @media only screen and (max-width: 768px) {
+          position: relative;
+          left: auto;
+          text-align: center;
         }
       }
       .guria {
@@ -137,6 +156,12 @@
         transition: 300ms all ease;
         &:hover {
           color: #fff;
+        }
+        @media only screen and (max-width: 768px) {
+          justify-content: center;
+          position: relative;
+          left: auto;
+          text-align: center;
         }
       }
       .kakheti {
@@ -153,11 +178,17 @@
         &:hover {
           color: #fff;
         }
+        @media only screen and (max-width: 768px) {
+          align-self: center;
+          position: relative;
+          right: auto;
+          top: auto;
+        }
       }
       @media only screen and (max-width: 768px) {
         border: none;
         text-align: left;
-        padding-left: 1em;
+        padding: 1em;
         padding-top: 2em;
       }
       a {

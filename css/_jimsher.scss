@@ -2,6 +2,10 @@
   background-color: #141414;
   background-image: url("../assets/images/jimsher/1.png");
   position: relative;
+  height: 100vh;
+  @media only screen and (max-width: 768px) {
+    height: -webkit-fill-available;
+  }
   .nav-secondary {
     display: flex;
     position: fixed;
@@ -10,6 +14,16 @@
     padding: 2em 0;
     top: 0;
     z-index: 6;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      padding: 1em;
+      left: 0;
+      top: 50%;
+      flex-direction: column;
+      grid-gap: 2em;
+      position: absolute;
+      z-index: 999;
+    }
     a {
       color: rgba(255, 255, 255, 0.5);
       &:hover {
@@ -24,6 +38,10 @@
     bottom: 2rem;
     color: #fff;
     letter-spacing: 0.2em;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 3em;
+    }
   }
 }
 
@@ -31,10 +49,16 @@
   background-color: #141414;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
   .text {
     width: 60%;
     color: #fff;
     text-transform: uppercase;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
   }
 }
 .jimsher-3 {
@@ -43,10 +67,18 @@
   .left {
     height: 100%;
     background-image: url("../assets/images/jimsher/2.png");
+    @media only screen and (max-width: 768px) {
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
   }
   .right {
     height: 100%;
     background-image: url("../assets/images/jimsher/3.png");
+    @media only screen and (max-width: 768px) {
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
   }
 }
 
@@ -58,6 +90,11 @@
     text-transform: uppercase;
     width: 50%;
     color: #fff;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      font-size: 3em;
+      text-align: center;
+    }
   }
 }
 
@@ -65,6 +102,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #141414;
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 
   .left {
     font-size: 1.5em;
@@ -72,10 +112,17 @@
     width: 50%;
     color: #fff;
     margin: auto;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      padding: 2em 0;
+    }
   }
   .right {
     img {
       width: 70%;
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+      }
     }
   }
 }
@@ -83,18 +130,29 @@
 .jimsher-6 {
   background-color: #141414;
   background-image: url("../assets/images/jimsher/5.png");
+  @media only screen and (max-width: 768px) {
+    height: 30vh;
+  }
 }
 
 .jimsher-7 {
   background-color: #141414;
   display: flex;
   align-items: flex-end;
+  @media only screen and (max-width: 768px) {
+    padding: 1em;
+  }
   .center-text {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     width: 60%;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      align-items: flex-start;
+      flex-direction: column;
+    }
     img {
       align-self: flex-end;
       width: 100%;
@@ -107,6 +165,13 @@
       font-size: 6em;
       color: #fff;
       text-transform: uppercase;
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+        position: relative;
+        font-size: 2em;
+        top: auto;
+        left: auto;
+      }
     }
     .small {
       width: 22em;
@@ -124,6 +189,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #141414;
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    padding: 1em;
+  }
 
   .left {
     align-self: center;
@@ -134,6 +203,10 @@
       color: #fff;
       margin: auto;
       text-align: right;
+      @media only screen and (max-width: 768px) {
+        font-size: 2em;
+        text-align: left;
+      }
     }
   }
   .right {
@@ -145,6 +218,9 @@
       width: 50%;
       color: #fff;
       margin: auto;
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+      }
     }
   }
 }
@@ -152,12 +228,20 @@
 .jimsher-9 {
   background-color: #141414;
   background-image: url("../assets/images/jimsher/7.png");
+  @media only screen and (max-width: 768px) {
+    height: 30vh;
+    padding: 1em;
+  }
 }
 
 .jimsher-10 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #141414;
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    padding: 1em;
+  }
 
   .left {
   }
@@ -168,6 +252,10 @@
       width: 70%;
       color: #fff;
       margin: auto;
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+        font-size: 2em;
+      }
     }
   }
 }
@@ -177,9 +265,14 @@
   grid-template-columns: 7fr 3fr;
   background-color: #141414;
   overflow: hidden;
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    padding: 1em;
+  }
 
   .left {
     position: relative;
+
     img {
       width: 100%;
       object-fit: contain;
@@ -193,6 +286,13 @@
       transform: translateY(-50%);
       left: 90%;
       width: 30%;
+      @media only screen and (max-width: 768px) {
+        top: auto;
+        position: relative;
+        left: auto;
+        width: 100%;
+        transform: none;
+      }
     }
   }
   .right {

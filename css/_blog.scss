@@ -2,6 +2,14 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  @media only screen and (max-width: 768px) {
+    padding-top: 4rem;
+  }
+  .line {
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
   h1 {
     font-size: 3em;
     padding-bottom: 0.5em;
@@ -9,18 +17,31 @@
   h2 {
     text-transform: uppercase;
     padding-top: 2em;
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
   }
   .blog-circle {
     right: 4em;
     position: absolute;
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
   }
 }
 .blog {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    padding: 1em;
+  }
   align-items: flex-start;
 
   ul {
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
     padding-left: 2em;
     li {
       padding-bottom: 2em;
@@ -39,15 +60,21 @@
   }
   .blogs-container {
     height: 100%;
-    width: 95%;
+    width: 100%;
     overflow-y: scroll;
     display: flex;
     flex-wrap: wrap;
     grid-gap: 3em;
 
     .blogpost {
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+      }
       img {
         width: 30vw;
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+        }
       }
       &:hover {
         transition: 300ms all ease;
@@ -58,6 +85,9 @@
         font-size: 1.5em;
         text-transform: uppercase;
         color: #000;
+        @media only screen and (max-width: 768px) {
+          text-align: center;
+        }
       }
     }
     &::-webkit-scrollbar {

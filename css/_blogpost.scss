@@ -1,5 +1,9 @@
 .blogpost-container {
   width: 70vw;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    padding: 1em;
+  }
 }
 
 .blogpost-header {
@@ -10,11 +14,14 @@
     font-size: 3em;
     padding: 0.5em 0;
     text-transform: uppercase;
+    @media only screen and (max-width: 768px) {
+      text-align: center;
+      padding: 2rem 0;
+    }
   }
   h2 {
     text-transform: uppercase;
     padding-top: 2em;
-    text-transform: uppercase;
   }
   p {
     text-transform: uppercase;
@@ -38,6 +45,10 @@
   p {
     padding-top: 2em;
   }
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    padding: 0 1em;
+  }
 }
 
 .blogpost-3 {
@@ -46,12 +57,20 @@
   width: 80%;
 
   margin: auto;
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0 1em;
+  }
   .left {
     display: flex;
     width: 100%;
     justify-content: center;
     p {
       width: 50%;
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+      }
     }
   }
   .right {
@@ -68,6 +87,10 @@
   justify-content: center;
   align-items: flex-start;
   margin: auto;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    padding: 0 1em;
+  }
   p {
     padding-top: 2em;
   }
@@ -79,6 +102,11 @@
   width: 80%;
   grid-gap: 1em;
   margin: auto;
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0 1em;
+  }
   .left {
     img {
       width: 100%;
